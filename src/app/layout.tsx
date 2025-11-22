@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Lato, K2D } from "next/font/google";
 import "./globals.css";
 import "./custom.css";
+import Header from "@/components/common/header/Header.component";
+import Footer from "@/components/common/footer/Footer.component";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -30,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${lato.className} ${k2d.variable} antialiased bg-(--background)`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

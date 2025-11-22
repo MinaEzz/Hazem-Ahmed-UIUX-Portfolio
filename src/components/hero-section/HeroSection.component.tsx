@@ -7,20 +7,28 @@ export default function HeroSection() {
   return (
     <section
       id="home"
+      aria-labelledby="home-title"
       className="w-full min-h-screen relative overflow-hidden flex items-center justify-center pt-32 pb-16"
     >
       <Image
         src={HERO_BG}
-        className="absolute -z-10 object-cover object-center"
         alt=""
+        aria-hidden="true"
+        draggable={false}
+        priority
+        className="absolute -z-10 object-cover object-center"
       />
-      <div className="black-layer" />
+      <div className="black-layer" aria-hidden="true" />
 
       <div className="container z-10">
         <div className="w-full flex items-center max-lg:flex-col gap-4">
           <TextSection />
           <div className="lg:w-[30%] md:w-[50%] max-md:aspect-[1] mx-auto">
-            <Image src={HAZEM_IMG} alt="" />
+            <Image
+              src={HAZEM_IMG}
+              alt="Portrait of Hazem Ahmed Alalfy"
+              priority
+            />
           </div>
         </div>
       </div>
