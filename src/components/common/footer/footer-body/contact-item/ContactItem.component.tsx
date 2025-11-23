@@ -8,11 +8,13 @@ export default function ContactItem({
   desc,
 }: IContactItemProps) {
   return (
-    <div className="w-fit flex items-center gap-2 text-[#959595]">
+    <a
+      href={href}
+      className="w-fit flex items-center gap-2 text-[#959595] text-base font-bold"
+      title={title}
+    >
       {React.cloneElement(icon, { className: "w-4 h-4" })}
-      <a href={href} className="text-base font-bold" title={title}>
-        {desc}
-      </a>
-    </div>
+      {desc}
+    </a>
   );
 }

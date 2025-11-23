@@ -3,6 +3,16 @@ import { FaInstagram, FaDribbble, FaBehance } from "react-icons/fa6";
 import { RiGroupLine } from "react-icons/ri";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
+import { FaFigma } from "react-icons/fa";
+import {
+  TbBrandAdobeXd,
+  TbBrandAdobePhotoshop,
+  TbBrandAdobeIllustrator,
+  TbBrandAdobePremier,
+  TbBrandCss3,
+  TbBrandJavascript,
+} from "react-icons/tb";
+import { GrHtml5 } from "react-icons/gr";
 
 export const NAVIGATION_LINKS = [
   {
@@ -110,5 +120,48 @@ export const CONTACT = [
     title: "Phone",
     desc: "+0201092190750",
     href: "tel:+0201092190750",
+  },
+];
+
+export const SKILLS = [
+  {
+    icon: <FaFigma />,
+    percentage: 100,
+    title: "Figma",
+  },
+  {
+    icon: <TbBrandAdobeXd />,
+    percentage: 100,
+    title: "Adobe XD",
+  },
+  {
+    icon: <TbBrandAdobePhotoshop />,
+    percentage: 85,
+    title: "Adobe Photoshop",
+  },
+  {
+    icon: <TbBrandAdobeIllustrator />,
+    percentage: 60,
+    title: "Adobe Illustrator",
+  },
+  {
+    icon: <TbBrandAdobePremier />,
+    percentage: 70,
+    title: "Adobe Premier",
+  },
+  {
+    icon: <GrHtml5 />,
+    percentage: 100,
+    title: "HTML",
+  },
+  {
+    icon: <TbBrandCss3 />,
+    percentage: 100,
+    title: "CSS",
+  },
+  {
+    icon: <TbBrandJavascript />,
+    percentage: 85,
+    title: "Javascript",
   },
 ];

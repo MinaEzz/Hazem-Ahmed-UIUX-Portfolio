@@ -1,27 +1,28 @@
 import SectionContentWrapper from "../common/section-content-wrapper/SectionContentWrapper.component";
 import SectionHeader from "../common/section-header/SectionHeader.component";
-import { SERVICES } from "@/data";
-import ServiceCard from "./service-card/ServiceCard.component";
+import SkillItem from "./skill-item/SkillItem.component";
+import { SKILLS } from "@/data";
 
-export default function ServicesSection() {
+export default function SkillsSection() {
   return (
     <section
-      id="services"
-      aria-labelledby="services-heading"
+      id="skills"
+      aria-labelledby="skills-heading"
       className="w-full pd-y-s"
     >
       <div className="container">
         <SectionContentWrapper>
           <SectionHeader
-            id="services-heading"
-            title="Services"
-            desc="Crafting user experiences, designing intuitive interfaces."
+            id="skills-heading"
+            title="Tools Skills"
+            desc="User Interface and User Experience and Also video editing."
           />
-          <ul className="w-full grid lg:grid-cols-3 max-md:grid-cols-1 grid-cols-2 gap-4">
-            {SERVICES.map((item) => {
+
+          <ul className="w-full grid lg:grid-cols-5 max-md:grid-cols-1 grid-cols-2 gap-y-6">
+            {SKILLS.map((item) => {
               return (
                 <li key={item.title}>
-                  <ServiceCard {...item} />
+                  <SkillItem {...item} />
                 </li>
               );
             })}

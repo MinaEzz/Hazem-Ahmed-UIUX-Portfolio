@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className="container z-10">
         <div className="w-full flex items-center max-lg:flex-col gap-4">
           <TextSection />
-          <div className="lg:w-[30%] md:w-[50%] max-md:aspect-[1] mx-auto">
+          <div className="lg:w-[30%] md:w-[50%] max-md:aspect-[1]">
             <Image
               src={HAZEM_IMG}
               alt="Portrait of Hazem Ahmed Alalfy"

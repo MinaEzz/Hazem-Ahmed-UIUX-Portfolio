@@ -6,11 +6,11 @@ export default function SectionHeader({
   desc,
 }: ISectionHeaderProps) {
   return (
-    <div className="w-full flex flex-col items-center justify-center text-center gap-2 text-white capitalize">
-      <h3 id={id} className="text-4xl font-bold">
+    <div className="w-full flex flex-col items-center justify-center text-center gap-2 capitalize">
+      <h3 id={id} className="text-4xl font-bold text-white">
         {title}
       </h3>
-      <p className="text-xl font-medium">{desc}</p>
+      <p className="text-xl font-medium text-[#C4C2C2]">{desc}</p>
     </div>
   );
 }
