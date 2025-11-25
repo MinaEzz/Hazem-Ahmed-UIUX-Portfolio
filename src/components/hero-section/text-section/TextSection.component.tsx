@@ -52,7 +52,7 @@ export default function TextSection() {
 
       <ul
         role="list"
-        className="lg:w-fit w-full rounded-md grid grid-cols-3 max-md:grid-cols-1 gap-4 md:py-4 max-md:px-4"
+        className="lg:w-fit w-full rounded-md grid grid-cols-3 max-md:grid-cols-1 gap-4 md:!py-4 max-md:!px-4"
         style={{
           boxShadow: `
       0 0 4px 0 #2231FF

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Lato, K2D } from "next/font/google";
-import "./globals.css";
-import "@/scss/style.scss";
+import { RootProvider } from "@/providers/RootProvider";
 import Header from "@/components/common/header/Header.component";
 import Footer from "@/components/common/footer/Footer.component";
+import "./globals.css";
+import "@/scss/style.scss";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -32,9 +33,11 @@ export default function RootLayout({
       <body
         className={`${lato.className} ${k2d.variable} antialiased bg-(--background)`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <RootProvider>
+          <Header />
+          {children}
+          <Footer />
+        </RootProvider>
       </body>
     </html>
   );
