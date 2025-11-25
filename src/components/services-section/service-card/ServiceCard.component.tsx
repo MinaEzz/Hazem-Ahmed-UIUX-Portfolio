@@ -9,7 +9,7 @@ export default function ServiceCard({ title, desc, icon }: IServiceCardProps) {
       className="w-full h-full flex flex-col justify-between items-center px-4 py-6 rounded-3xl bg-white/4 text-center"
     >
       {/* CARD_HEADER */}
-      <header className="w-full flex flex-col gap-2 items-center text-[#2231FF]">
+      <header className="w-full flex flex-col gap-2 items-center text-[#6271fe]">
         {React.cloneElement(icon, { className: "w-12 h-12" })}
         <h4 id={`${title}-heading`} className="text-2xl capitalize font-bold">
           {title}

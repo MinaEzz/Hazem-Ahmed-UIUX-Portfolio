@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lato, K2D } from "next/font/google";
 import "./globals.css";
-import "./custom.css";
+import "@/scss/style.scss";
 import Header from "@/components/common/header/Header.component";
 import Footer from "@/components/common/footer/Footer.component";
 

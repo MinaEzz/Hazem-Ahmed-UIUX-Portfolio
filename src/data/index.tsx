@@ -165,3 +165,49 @@ export const SKILLS = [
     title: "Javascript",
   },
 ];
+
+export const SERVICE_OPTIONS = [
+  {
+    label: "App Design",
+    value: "App_Design",
+  },
+  {
+    label: "Web Design",
+    value: "Web_Design",
+  },
+  {
+    label: "SaaS Design",
+    value: "SaaS_Design",
+  },
+  {
+    label: "CRM Design",
+    value: "CRM_Design",
+  },
+  {
+    label: "Control Panel Design",
+    value: "Control_Panel_Design",
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Millensys Medical Solution Mobile application",
+    image: "",
+    link: "",
+  },
+  {
+    title: "Traviro B2B Travel Booking solution",
+    image: "",
+    link: "",
+  },
+  {
+    title: "Traviro B2B Dashboard Travel Booking solution",
+    image: "",
+    link: "",
+  },
+  {
+    title: "Visalab Visa Booking solution",
+    image: "",
+    link: "",
+  },
+];

@@ -1,0 +1,205 @@
+.h1 {
+  font-size: 2.875rem !important;
+  line-height: 3.625rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 2rem !important;
+    line-height: 2.375rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 2.5rem !important;
+    line-height: 3rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.h2 {
+  font-size: 2.5rem !important;
+  line-height: 3rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 1.75rem !important;
+    line-height: 2.125rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 2rem !important;
+    line-height: 2.375rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.h3 {
+  font-size: 2rem !important;
+  line-height: 2.375rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 1.5rem !important;
+    line-height: 1.75rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 1.75rem !important;
+    line-height: 2.125rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.h4 {
+  font-size: 1.75rem !important;
+  line-height: 2.125rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 1.5rem !important;
+    line-height: 1.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.h5 {
+  font-size: 1.5rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.s1 {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 0.875rem !important;
+    line-height: 1.375rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.s2 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+  @media screen and (max-width: 767px) {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08rem !important;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    font-size: 0.875rem !important;
+    line-height: 1.375rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.08rem !important;
+  }
+}
+.b1 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08rem !important;
+}
+.b2 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08rem !important;
+}
+.b3 {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08rem !important;
+}
+.b4 {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+}
+.c1 {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08rem !important;
+}
+.c2 {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+}
+.c3 {
+  font-size: 0.625rem !important;
+  line-height: 0.875rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+}
+.label {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08rem !important;
+}
+
+.button-giant {
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600 !important;
+  // letter-spacing: 0.08rem !important;
+}
+.button-large {
+  font-size: 1rem !important;
+  line-height: 1.25rem !important;
+  font-weight: 600 !important;
+  // letter-spacing: 0.08rem !important;
+}
+.button-medium {
+  font-size: 0.875rem !important;
+  line-height: 1rem !important;
+  font-weight: 600 !important;
+  // letter-spacing: 0.08rem !important;
+}
+.button-small {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  font-weight: 600 !important;
+  // letter-spacing: 0.08rem !important;
+}
+.button-tiny {
+  font-size: 0.625rem !important;
+  line-height: 0.75rem !important;
+  font-weight: 600 !important;
+  // letter-spacing: 0.08rem !important;
+}

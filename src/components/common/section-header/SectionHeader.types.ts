@@ -1,5 +1,5 @@
 export default interface ISectionHeaderProps {
   title: string;
-  desc: string;
+  desc?: string;
   id: string;
 }
