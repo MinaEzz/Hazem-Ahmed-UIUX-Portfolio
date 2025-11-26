@@ -77,32 +77,32 @@ export const COUNTS = [
 
 export const SERVICES = [
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "App Design",
     desc: "Mobile app design demands a keen focus on UX/UI principles. Prioritizing user experience (UX) ensures intuitive navigation and ease of use.",
   },
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "Web Design",
     desc: "i focuses on the holistic experience a user has while interacting with a website. It encompasses aspects like usability, accessibility, and overall satisfaction",
   },
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "SaaS Design",
     desc: "SaaS design isn’t just about making an app look nice — it’s about creating a product that users can understand quickly, trust immediately, and use effortlessly.",
   },
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "CRM Design",
     desc: "CRM system means balancing data density with usability — you’re showing a lot of information (contacts, deals, pipelines) without overwhelming the user.",
   },
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "Control Panel Design",
     desc: "A control panel design is all about clarity, quick access, and feedback — whether it’s for SaaS admin dashboards, IoT devices, or system monitoring.",
   },
   {
-    icon: <RiGroupLine />,
+    // icon: <RiGroupLine />,
     title: "Desktop app Design",
     desc: "desktop app is different from web or mobile because users often expect powerful features, multi-window workflows, and rich interactions — but also clarity and efficiency.",
   },
@@ -192,22 +192,45 @@ export const SERVICE_OPTIONS = [
 export const PROJECTS = [
   {
     title: "Millensys Medical Solution Mobile application",
-    image: "",
+    image: "https://www2.0zz0.com/2025/09/12/09/987034779.jpg",
     link: "",
+    category: "mobile-app",
   },
   {
     title: "Traviro B2B Travel Booking solution",
-    image: "",
+    image: "https://www2.0zz0.com/2025/09/12/09/987034779.jpg",
     link: "",
+    category: "web-app",
   },
   {
     title: "Traviro B2B Dashboard Travel Booking solution",
-    image: "",
+    image: "https://www2.0zz0.com/2025/09/12/09/987034779.jpg",
     link: "",
+    category: "control-panel",
   },
   {
     title: "Visalab Visa Booking solution",
-    image: "",
+    image: "https://www2.0zz0.com/2025/09/12/09/987034779.jpg",
     link: "",
+    category: "web-app",
+  },
+];
+
+export const CATEGORIES = [
+  {
+    label: "Web Design",
+    id: "web-app",
+  },
+  {
+    label: "Mobile App Design",
+    id: "mobile-app",
+  },
+  {
+    label: "Control Panel Design",
+    id: "control-panel",
+  },
+  {
+    label: "PACS System Design",
+    id: "pacs-system",
   },
 ];
