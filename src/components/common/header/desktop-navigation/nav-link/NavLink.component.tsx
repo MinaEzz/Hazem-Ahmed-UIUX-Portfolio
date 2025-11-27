@@ -34,6 +34,25 @@ export default function NavLink({
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveHash(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => sections.forEach((section) => observer.unobserve(section));
+  }, []);
+
   return (
     <a href={href} className={cn(linkStyles({ active: activeHash === href }))}>
       {title}

@@ -1,3 +1,4 @@
+import ToUp from "@/components/common/animations/to-up/ToUp.component";
 import Button from "@/UI/button/Button.component";
 import { FiDownload } from "react-icons/fi";
 
@@ -14,10 +15,12 @@ export default function TextSection() {
         resulting in designs that not only look great but also deliver
         measurable results.
       </p>
-      <Button variant="default" size="md">
-        <FiDownload className="w-4 h-4" />
-        Download CV
-      </Button>
+      <ToUp>
+        <Button variant="default" size="md">
+          <FiDownload className="w-4 h-4" />
+          Download CV
+        </Button>
+      </ToUp>
     </div>
   );
 }
