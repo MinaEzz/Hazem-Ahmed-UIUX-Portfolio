@@ -10,4 +10,5 @@ export default interface IDropdownProps {
   onSelect: (name: string, value: string | number) => void;
   placeholder?: string;
   name: string;
+  value?: string;
 }

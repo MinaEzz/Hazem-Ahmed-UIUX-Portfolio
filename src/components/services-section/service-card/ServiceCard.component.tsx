@@ -1,8 +1,8 @@
-import React from "react";
 import IServiceCardProps from "./ServiceCard.types";
 import Button from "@/UI/button/Button.component";
+import { RiGroupLine } from "react-icons/ri";
 
-export default function ServiceCard({ title, desc, icon }: IServiceCardProps) {
+export default function ServiceCard({ title, desc }: IServiceCardProps) {
   return (
     <article
       aria-labelledby={`${title}-heading`}
@@ -10,7 +10,7 @@ export default function ServiceCard({ title, desc, icon }: IServiceCardProps) {
     >
       {/* CARD_HEADER */}
       <header className="w-full flex flex-col gap-2 items-center text-[#6271fe]">
-        {React.cloneElement(icon, { className: "w-12 h-12" })}
+        <RiGroupLine className="w-12 h-12" />
         <h4 id={`${title}-heading`} className="text-2xl capitalize font-bold">
           {title}
         </h4>

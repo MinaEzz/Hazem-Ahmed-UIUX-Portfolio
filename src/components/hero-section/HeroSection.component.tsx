@@ -2,6 +2,8 @@ import Image from "next/image";
 import HERO_BG from "@/assets/hero-background-image.webp";
 import HAZEM_IMG from "@/assets/hazem-ahmed.png";
 import TextSection from "./text-section/TextSection.component";
+import ToLeft from "../common/animations/to-left/ToLeft.component";
+import Floating from "../common/animations/floating/Floating.component";
 
 export default function HeroSection() {
   return (
@@ -24,11 +26,13 @@ export default function HeroSection() {
         <div className="w-full flex items-center max-lg:flex-col gap-4">
           <TextSection />
           <div className="lg:w-[30%] md:w-[50%] max-md:aspect-[1]">
-            <Image
-              src={HAZEM_IMG}
-              alt="Portrait of Hazem Ahmed Alalfy"
-              priority
-            />
+            <Floating>
+              <Image
+                src={HAZEM_IMG}
+                alt="Portrait of Hazem Ahmed Alalfy"
+                priority
+              />
+            </Floating>
           </div>
         </div>
       </div>

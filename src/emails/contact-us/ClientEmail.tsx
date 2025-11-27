@@ -1,8 +1,7 @@
-import * as React from "react";
 import { Section, Text } from "@react-email/components";
 import EmailLayout from "../EmailLayout";
 
-export default function UserEmail({ name }: { name: string }) {
+export default function ClientEmail({ name = "" }: { name: string }) {
   return (
     <EmailLayout>
       <Section style={{ padding: "10px 0", width: "100%" }}>
@@ -15,9 +14,10 @@ export default function UserEmail({ name }: { name: string }) {
             textAlign: "center",
           }}
         >
-          Thank you for reaching out to El Galala International Film Festival 🎬
+          Thank You For Getting In Touch! 👋
         </Text>
 
+        {/* Greeting */}
         <Text
           style={{
             fontSize: "1rem",
@@ -26,9 +26,10 @@ export default function UserEmail({ name }: { name: string }) {
             lineHeight: "1.6",
           }}
         >
-          Dear {name},
+          Hi {name.split(" ")[0]},
         </Text>
 
+        {/* Body */}
         <Text
           style={{
             fontSize: "0.95rem",
@@ -37,8 +38,8 @@ export default function UserEmail({ name }: { name: string }) {
             lineHeight: "1.6",
           }}
         >
-          We have successfully received your message. Our team will carefully
-          review your request and get back to you as soon as possible.
+          Your message has been received successfully. Thank you for reaching
+          out — I truly appreciate your interest in working together.
         </Text>
 
         <Text
@@ -49,10 +50,11 @@ export default function UserEmail({ name }: { name: string }) {
             lineHeight: "1.6",
           }}
         >
-          Thank you for being part of the El Galala International Film Festival
-          experience. We look forward to welcoming you soon.
+          I’ll review the details you shared and get back to you as soon as
+          possible with the next steps. Looking forward to connecting with you.
         </Text>
 
+        {/* Signature */}
         <Text
           style={{
             fontSize: "0.95rem",
@@ -61,9 +63,11 @@ export default function UserEmail({ name }: { name: string }) {
             fontWeight: "bold",
           }}
         >
-          Warm regards,
+          Best regards,
           <br />
-          El Galala Festival Team
+          Hazem Ahmed
+          <br />
+          Product Designer & UI/UX Specialist
         </Text>
       </Section>
     </EmailLayout>

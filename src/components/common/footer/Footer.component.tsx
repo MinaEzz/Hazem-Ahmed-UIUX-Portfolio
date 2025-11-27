@@ -9,7 +9,7 @@ export default function Footer() {
 
       <div className="max-md:w-[90%] lg:w-[50%] w-[70%] border-t border-[#707070] pt-4 flex flex-col text-base text-[#707070] font-bold text-center">
         <p>Designed by Hazem Ahmed UI/UX designer</p>
-        <p>Developed by Mina Ezzat MERN Stack Dev</p>
+        <p>Developed by Mina Ezzat Full-Stack Developer</p>
       </div>
     </footer>
   );

@@ -1,89 +1,95 @@
-import * as React from "react";
 import { Link, Section, Text } from "@react-email/components";
 import EmailLayout from "../EmailLayout";
 
 export default function AdminEmail({
-  name,
-  email,
-  subject,
-  message,
+  name = "",
+  email = "",
+  phoneNumber = "",
+  service = "",
+  timeline = "",
+  details = "",
 }: {
   name: string;
   email: string;
-  subject?: string;
-  message: string;
+  phoneNumber: string;
+  service: string;
+  timeline: string;
+  details: string;
 }) {
   return (
     <EmailLayout>
       <Section style={{ padding: "10px 0", width: "100%" }}>
+        {/* Title */}
         <Text
           style={{
-            fontSize: "1.25rem",
-            margin: "0 0 15px 0",
-            color: "#222",
+            fontSize: "1.2rem",
+            margin: "0 0 20px 0",
+            color: "#333",
             fontWeight: "bold",
             textAlign: "center",
           }}
         >
-          📩 New Contact Message Received
+          New Contact Request Received 📩
         </Text>
-        <Section
-          style={{
-            backgroundColor: "#f9f9f9",
-            padding: "15px",
-            border: "1px solid #eee",
-            borderRadius: "6px",
-            marginBottom: "20px",
-            color: "#000",
-            fontSize: "0.875rem",
-          }}
-        >
-          <Text style={{ margin: "0 0 4px 0" }}>
-            <strong>Name:</strong> {name}
-          </Text>
-          <Text style={{ margin: "0 0 4px 0" }}>
-            <strong>Email:</strong>{" "}
-            <a
-              href={`mailto:${email}`}
-              style={{ color: "#e08305", textDecoration: "none" }}
-            >
-              {email}
-            </a>
-          </Text>
-          {subject && (
-            <Text style={{ margin: "0" }}>
-              <strong>Subject:</strong> {subject}
-            </Text>
-          )}
-        </Section>
+
+        {/* Intro */}
         <Text
           style={{
-            margin: "15px 0 4px 0",
-            fontSize: "0.875rem",
-            color: "#000",
-          }}
-        >
-          <strong>Message:</strong>
-        </Text>
-        <Text
-          style={{
-            backgroundColor: "#fafafa",
-            padding: "15px",
-            borderRadius: "6px",
-            border: "1px solid #eee",
-            fontSize: "0.875rem",
+            fontSize: "1rem",
+            margin: "0 0 15px 0",
             color: "#444",
-            lineHeight: "1.5",
-            margin: "0",
+            lineHeight: "1.6",
           }}
         >
-          {message}
+          You’ve received a new message through the portfolio contact form.
+          Below are the details shared by the user:
+        </Text>
+
+        <Text
+          style={{
+            fontSize: "0.95rem",
+            margin: "0 0 10px 0",
+            color: "#555",
+            lineHeight: "1.6",
+          }}
+        >
+          <strong>Name:</strong> {name}
+          <br />
+          <strong>Email:</strong> {email}
+          <br />
+          <strong>Phone Number:</strong> {phoneNumber}
+          <br />
+          <strong>Service Requested:</strong> {service}
+          <br />
+          <strong>Project Timeline:</strong> {timeline}
+        </Text>
+
+        {/* Message */}
+        <Text
+          style={{
+            fontSize: "0.95rem",
+            margin: "20px 0 10px 0",
+            color: "#444",
+            fontWeight: "bold",
+          }}
+        >
+          Message Details:
+        </Text>
+        <Text
+          style={{
+            fontSize: "0.95rem",
+            margin: "0 0 25px 0",
+            color: "#555",
+            lineHeight: "1.6",
+          }}
+        >
+          {details}
         </Text>
 
         <Link
           href={`mailto:${email}`}
           style={{
-            backgroundColor: "#e08305",
+            backgroundColor: "#2A3086",
             color: "#fff",
             padding: "10px 20px",
             borderRadius: "5px",
