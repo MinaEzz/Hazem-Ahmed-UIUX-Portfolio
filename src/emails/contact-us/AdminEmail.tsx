@@ -81,7 +81,6 @@ export default function AdminEmail({
             margin: "0 0 25px 0",
             color: "#555",
             lineHeight: "1.6",
-            whiteSpace: "pre-wrap",
           }}
         >
           {details}

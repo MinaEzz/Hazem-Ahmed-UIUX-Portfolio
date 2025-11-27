@@ -5,6 +5,8 @@ import Header from "@/components/common/header/Header.component";
 import Footer from "@/components/common/footer/Footer.component";
 import "./globals.css";
 import "@/scss/style.scss";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -37,6 +39,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ToastContainer position="top-right" theme="dark" />
         </RootProvider>
       </body>
     </html>

@@ -1,6 +1,5 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram, FaDribbble, FaBehance } from "react-icons/fa6";
-import { RiGroupLine } from "react-icons/ri";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFigma } from "react-icons/fa";
@@ -169,23 +168,23 @@ export const SKILLS = [
 export const SERVICE_OPTIONS = [
   {
     label: "App Design",
-    value: "App_Design",
+    value: "App Design",
   },
   {
     label: "Web Design",
-    value: "Web_Design",
+    value: "Web Design",
   },
   {
     label: "SaaS Design",
-    value: "SaaS_Design",
+    value: "SaaS Design",
   },
   {
     label: "CRM Design",
-    value: "CRM_Design",
+    value: "CRM Design",
   },
   {
     label: "Control Panel Design",
-    value: "Control_Panel_Design",
+    value: "Control Panel Design",
   },
 ];
 

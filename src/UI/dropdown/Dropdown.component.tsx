@@ -35,6 +35,7 @@ export default function Dropdown({
   placeholder = "Select an option",
   options = [],
   onSelect,
+  value,
 }: IDropdownProps) {
   const { isOpen, closeDropdown, toggleDropdown, selected, setSelected } =
     useDropdown();
@@ -50,6 +51,10 @@ export default function Dropdown({
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    setSelected(value || "");
+  }, [value, setSelected]);
 
   return (
     <div ref={ref} className="w-full relative">
