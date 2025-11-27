@@ -12,7 +12,7 @@ export default function page() {
       <ServicesSection />
       <AboutSection />
       <SkillsSection />
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
       <ContactSection />
     </>
   );
