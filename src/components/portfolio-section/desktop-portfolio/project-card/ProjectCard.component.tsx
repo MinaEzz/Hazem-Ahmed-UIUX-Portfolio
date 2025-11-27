@@ -3,7 +3,7 @@ import IProjectCardProps from "./ProjectCard.types";
 
 export default function ProjectCard({ image, title, href }: IProjectCardProps) {
   return (
-    <div className="xl:w-[90%] xl:mx-auto w-full h-full bg-white/4 rounded-xl overflow-hidden">
+    <div className="xl:w-[90%] xl:mx-auto w-full h-full bg-white/4 rounded-2xl overflow-hidden">
       {/* CARD HEADER */}
       <div className="w-full h-[21rem]">
         <img src={image} alt={title} className=" object-center object-fill" />

@@ -33,23 +33,24 @@ export default function EmailLayout({
           <Section
             style={{
               backgroundImage:
-                "url('https://www2.0zz0.com/2025/09/12/09/987034779.jpg')",
+                "url('https://www2.0zz0.com/2025/11/26/16/183913915.jpg')",
               backgroundSize: "cover",
-              backgroundPosition: "center",
-              textAlign: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "50% 15%",
+              textAlign: "start",
               padding: "14.5% 20px",
             }}
           >
             <h1
               style={{
-                width: "100%",
+                width: "75%",
                 margin: 0,
                 fontSize: "1.75rem",
                 fontWeight: "bold",
                 color: "#fff",
               }}
             >
-              El Galala International Film Festival
+              Hazem Ahmed <br /> UI/UX Designer
             </h1>
           </Section>
           {/* ./HEADER */}
@@ -58,42 +59,48 @@ export default function EmailLayout({
 
           <Section
             style={{
-              marginTop: "30px",
-              paddingTop: "20px",
-              borderTop: "1px solid #e5e5e5",
+              marginTop: "15px",
+              padding: "25px",
               textAlign: "center",
-              fontSize: "0.75rem",
-              color: "#666",
+              borderTop: "1px solid #e5e7eb",
             }}
           >
-            <Text style={{ margin: "0 0 5px 0" }}>
-              © {new Date().getFullYear()} El Galala International Film
-              Festival. All rights reserved.
+            <Text
+              style={{
+                fontSize: "12px",
+                color: "#6b7280",
+                marginBottom: "5px",
+              }}
+            >
+              © {new Date().getFullYear()} Hazem Ahmed. All rights reserved.
             </Text>
 
-            <Text style={{ margin: "0 0 5px 0" }}>
-              📍 El Galala City, Egypt
-            </Text>
-
-            <Text style={{ margin: "0 0 5px 0" }}>
-              🌐{" "}
+            <Text
+              style={{ fontSize: "12px", color: "#6b7280", margin: "4px 0" }}
+            >
+              📧{" "}
               <Link
-                href="http://agiff.org"
-                style={{ color: "#e08305", textDecoration: "none" }}
+                href="mailto:hazemasaidui@gmail.com"
+                style={{ color: "#3b82f6", textDecoration: "none" }}
               >
-                agiff.org
-              </Link>{" "}
-              | ✉️{" "}
-              <Link
-                href="mailto:festival@agiff.org"
-                style={{ color: "#e08305", textDecoration: "none" }}
-              >
-                festival@agiff.org
+                hazemasaidui@gmail.com
               </Link>
             </Text>
 
             <Text
-              style={{ marginTop: "10px", fontSize: "0.625rem", color: "#999" }}
+              style={{ fontSize: "12px", color: "#6b7280", margin: "4px 0" }}
+            >
+              🌐{" "}
+              <Link
+                href="https://hazem-ahmed-uiux-portfolio.vercel.app"
+                style={{ color: "#3b82f6", textDecoration: "none" }}
+              >
+                Portfolio Website
+              </Link>
+            </Text>
+
+            <Text
+              style={{ marginTop: "16px", fontSize: "11px", color: "#9ca3af" }}
             >
               This is an automated message, please do not reply directly.
             </Text>
