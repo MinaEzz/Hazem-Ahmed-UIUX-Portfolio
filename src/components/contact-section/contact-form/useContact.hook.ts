@@ -48,7 +48,7 @@ export function useContact() {
         method: "POST",
         body: JSON.stringify({
           name: formValues.name?.trim(),
-          email: formValues.email?.trim(),
+          email: formValues.email?.trim().toLowerCase(),
           phoneNumber: formValues.phoneNumber?.trim(),
           service: formValues.service?.trim(),
           timeline: formValues.timeline?.trim(),

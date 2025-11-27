@@ -24,15 +24,15 @@ export async function POST(request: Request) {
   );
   const userEmailHtml = await pretty(await render(ClientEmail({ name })));
 
-  // Email to festival admins
+  // Email to admin
   await resend.emails.send({
     from: "Hazem Ahmed | UI/UX Designer <onboarding@resend.dev>",
-    to: ["minaezzat98@gmail.com"],
+    to: ["hazemasaidui@gmail.com"],
     subject: `New Contact Form Submission`,
     html: adminEmailHtml,
   });
 
-  // Auto-reply to user
+  // Auto-reply to client
   await resend.emails.send({
     from: "Hazem Ahmed | UI/UX Designer <onboarding@resend.dev>",
     to: [email],
