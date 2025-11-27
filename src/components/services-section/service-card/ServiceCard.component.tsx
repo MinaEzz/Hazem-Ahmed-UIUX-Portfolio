@@ -27,6 +27,7 @@ export default function ServiceCard({ title, desc }: IServiceCardProps) {
         size="md"
         aria-label={`Book service: ${title}`}
         className="uppercase"
+        href="#contact"
       >
         Book Now
       </Button>

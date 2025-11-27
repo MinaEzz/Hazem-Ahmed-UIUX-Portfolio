@@ -2,7 +2,6 @@ import Image from "next/image";
 import HERO_BG from "@/assets/hero-background-image.webp";
 import HAZEM_IMG from "@/assets/hazem-ahmed.png";
 import TextSection from "./text-section/TextSection.component";
-import ToLeft from "../common/animations/to-left/ToLeft.component";
 import Floating from "../common/animations/floating/Floating.component";
 
 export default function HeroSection() {

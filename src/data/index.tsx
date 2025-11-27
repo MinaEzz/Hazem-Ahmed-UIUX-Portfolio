@@ -27,6 +27,10 @@ export const NAVIGATION_LINKS = [
     href: "#about",
   },
   {
+    title: "Skills",
+    href: "#skills",
+  },
+  {
     title: "Portfolio",
     href: "#portfolio",
   },

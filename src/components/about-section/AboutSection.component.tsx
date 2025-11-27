@@ -3,6 +3,7 @@ import SectionContentWrapper from "../common/section-content-wrapper/SectionCont
 import SectionHeader from "../common/section-header/SectionHeader.component";
 import TextSection from "./text-section/TextSection.component";
 import HAZEM_IMG from "@/assets/hazem-ahmed.png";
+import ToDown from "../common/animations/to-down/ToDown.component";
 
 export default function AboutSection() {
   return (
@@ -21,11 +22,9 @@ export default function AboutSection() {
 
           <div className="w-full flex items-center justify-around max-lg:flex-col gap-4">
             <div className="lg:w-[30%] md:w-[50%] max-md:aspect-[1]">
-              <Image
-                src={HAZEM_IMG}
-                alt="Portrait of Hazem Ahmed Alalfy"
-                priority
-              />
+              <ToDown>
+                <Image src={HAZEM_IMG} alt="Portrait of Hazem Ahmed Alalfy" />
+              </ToDown>
             </div>
             <TextSection />
           </div>
