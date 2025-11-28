@@ -27,7 +27,7 @@ export async function POST(request: Request) {
   // Email to admin
   await resend.emails.send({
     from: "Hazem Ahmed | UI/UX Designer <onboarding@resend.dev>",
-    to: ["hazemasaidui@gmail.com"],
+    to: ["minaezzat98@gmail.com"],
     subject: `New Contact Form Submission`,
     html: adminEmailHtml,
   });
