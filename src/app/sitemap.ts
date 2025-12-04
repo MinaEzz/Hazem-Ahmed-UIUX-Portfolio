@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //   lastModified: new Date(),
     // },
     {
-      url: `${process.env.BASE_URL}/contact`,
+      url: `${process.env.BASE_URL}/#contact`,
       lastModified: new Date(),
     },
   ];
