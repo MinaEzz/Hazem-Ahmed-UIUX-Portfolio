@@ -3,31 +3,31 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     {
-      url: process.env.BASE_URL || "localhost:3000",
+      url: "https://hazem-ahmed-uiux-portfolio.vercel.app",
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/#home`,
+      url: `https://hazem-ahmed-uiux-portfolio.vercel.app/#home`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/#services`,
+      url: `https://hazem-ahmed-uiux-portfolio.vercel.app/#services`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/#about`,
+      url: `https://hazem-ahmed-uiux-portfolio.vercel.app/#about`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/#skills`,
+      url: `https://hazem-ahmed-uiux-portfolio.vercel.app/#skills`,
       lastModified: new Date(),
     },
     // {
-    //   url: `${process.env.BASE_URL}/portfolio`,
+    //   url: `https://hazem-ahmed-uiux-portfolio.vercel.app/portfolio`,
     //   lastModified: new Date(),
     // },
     {
-      url: `${process.env.BASE_URL}/#contact`,
+      url: `https://hazem-ahmed-uiux-portfolio.vercel.app/#contact`,
       lastModified: new Date(),
     },
   ];
