@@ -22,7 +22,7 @@ export default function ServicesSection() {
             {SERVICES.map((item, index) => {
               return (
                 <li key={index}>
-                  <ScaleWithOpacity delay={0.3 * index}>
+                  <ScaleWithOpacity className="h-full" delay={0.3 * index}>
                     <ServiceCard {...item} />
                   </ScaleWithOpacity>
                 </li>
