@@ -2,6 +2,8 @@ import SociaMediaItem from "@/components/common/social-media-item/SociaMediaItem
 import { SOCIAL_MEDIA, COUNTS } from "@/data";
 import Button from "@/UI/button/Button.component";
 import CountItem from "./count-item/CountItem.component";
+import TypingEffect from "@/components/common/animations/typing-effect/TypingEffect.component";
+import ToRight from "@/components/common/animations/to-right/ToRight.component";
 
 export default function TextSection() {
   return (
@@ -10,8 +12,8 @@ export default function TextSection() {
       aria-labelledby="hero-title"
       className="w-full flex flex-1 flex-col gap-6 max-lg:items-center max-lg:text-center"
     >
-      <p className="text-2xl capitalize text-white font-semibold">
-        Hi I am <br /> Hazem Ahmed Alalfy
+      <p className="text-2xl text-white font-semibold">
+        Hi I Am <br /> <TypingEffect text="Hazem Ahmed Alalfy" />
       </p>
       <h1
         id="hero-title"
@@ -21,10 +23,12 @@ export default function TextSection() {
       </h1>
 
       <ul className="w-fit flex items-center gap-4" role="list">
-        {SOCIAL_MEDIA.map((item) => {
+        {SOCIAL_MEDIA.map((item, index) => {
           return (
-            <li key={item.title} role="listitem">
-              <SociaMediaItem {...item} />;
+            <li key={index} role="listitem">
+              <ToRight delay={0.2 * index}>
+                <SociaMediaItem {...item} />;
+              </ToRight>
             </li>
           );
         })}
@@ -52,7 +56,7 @@ export default function TextSection() {
 
       <ul
         role="list"
-        className="lg:w-fit w-full rounded-md grid grid-cols-3 max-md:grid-cols-1 gap-4 md:py-4 max-md:px-4"
+        className="lg:w-fit w-full rounded-md grid grid-cols-3 max-md:grid-cols-1 gap-4 md:!py-4 max-md:!px-4"
         style={{
           boxShadow: `
       0 0 4px 0 #2231FF
