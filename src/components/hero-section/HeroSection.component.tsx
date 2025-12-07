@@ -17,7 +17,7 @@ export default function HeroSection() {
         aria-hidden="true"
         draggable={false}
         priority
-        className="absolute -z-10 object-cover object-center"
+        className="absolute -z-10 object-cover object-center opacity-40"
       />
       <div className="black-layer" aria-hidden="true" />
 
