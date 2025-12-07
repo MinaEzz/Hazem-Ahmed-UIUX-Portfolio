@@ -46,26 +46,26 @@ export const SOCIAL_MEDIA = [
     icon: <CiLinkedin />,
     href: "https://www.linkedin.com/in/hazem-ahmed879",
   },
+    {
+    title: "Behance",
+    icon: <FaBehance />,
+    href: "https://www.behance.net/hazemahmed82",
+  },
+    {
+    title: "Instagram",
+    icon: <FaInstagram />,
+    href: "https://www.instagram.com/hazemahmed8384",
+  },
   {
     title: "WhatsApp",
     icon: <FaWhatsapp />,
     href: "https://wa.me/+201092190750",
-  },
-  {
-    title: "Instagram",
-    icon: <FaInstagram />,
-    href: "https://www.instagram.com/hazemahmed8384",
   },
   // {
   //   title: "Dribble",
   //   icon: <FaDribbble />,
   //   href: "",
   // },
-  {
-    title: "Behance",
-    icon: <FaBehance />,
-    href: "https://www.behance.net/hazemahmed82",
-  },
 ];
 
 export const COUNTS = [
