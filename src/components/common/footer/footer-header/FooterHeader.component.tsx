@@ -18,7 +18,7 @@ export default function FooterHeader() {
               <li key={link.title}>
                 <a
                   href={link.href}
-                  className={`text-lg text-[#959595] capitalize  font-medium tracking-wider`}
+                  className={`text-lg text-[#C4C2C2] capitalize  font-medium tracking-wider`}
                 >
                   {link.title}
                 </a>
