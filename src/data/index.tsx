@@ -1,5 +1,5 @@
 import { CiLinkedin } from "react-icons/ci";
-import { FaInstagram, FaDribbble, FaBehance } from "react-icons/fa6";
+import { FaInstagram, FaBehance, FaWhatsapp } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFigma } from "react-icons/fa";
@@ -31,8 +31,8 @@ export const NAVIGATION_LINKS = [
     href: "#skills",
   },
   {
-    title: "Portfolio",
-    href: "#portfolio",
+    title: "Projects",
+    href: "#projects",
   },
   {
     title: "Contact Me",
@@ -42,24 +42,29 @@ export const NAVIGATION_LINKS = [
 
 export const SOCIAL_MEDIA = [
   {
-    title: "Instagram",
-    icon: <FaInstagram />,
-    href: "",
-  },
-  {
-    title: "Dribbble",
-    icon: <FaDribbble />,
-    href: "",
-  },
-  {
     title: "Linkedin",
     icon: <CiLinkedin />,
-    href: "",
+    href: "https://www.linkedin.com/in/hazem-ahmed879",
   },
+  {
+    title: "WhatsApp",
+    icon: <FaWhatsapp />,
+    href: "https://wa.me/+201092190750",
+  },
+  {
+    title: "Instagram",
+    icon: <FaInstagram />,
+    href: "https://www.instagram.com/hazemahmed8384",
+  },
+  // {
+  //   title: "Dribble",
+  //   icon: <FaDribbble />,
+  //   href: "",
+  // },
   {
     title: "Behance",
     icon: <FaBehance />,
-    href: "",
+    href: "https://www.behance.net/hazemahmed82",
   },
 ];
 
@@ -222,18 +227,18 @@ export const PROJECTS = [
 export const CATEGORIES = [
   {
     label: "Web Design",
-    id: "web-app",
+    id: "web_app",
   },
   {
     label: "Mobile App Design",
-    id: "mobile-app",
+    id: "mobile_app",
   },
   {
     label: "Control Panel Design",
-    id: "control-panel",
+    id: "control_panel",
   },
   {
     label: "PACS System Design",
-    id: "pacs-system",
+    id: "pacs_system",
   },
 ];

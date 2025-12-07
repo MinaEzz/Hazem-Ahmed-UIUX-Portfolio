@@ -94,7 +94,7 @@ export default function SkillItem({
       </div>
 
       <div className="flex flex-col items-center text-center gap-0 font-bold">
-        <span className="text-3xl text-[#2231FF]">{Math.round(progress)}%</span>
+        <span className="text-3xl text-white">{Math.round(progress)}%</span>
         <h4 className="text-2xl text-[#959595] capitalize">{title}</h4>
       </div>
     </div>

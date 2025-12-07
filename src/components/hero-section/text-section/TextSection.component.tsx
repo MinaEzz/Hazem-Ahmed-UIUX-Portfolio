@@ -38,10 +38,10 @@ export default function TextSection() {
         <Button
           variant="default"
           size="lg"
-          href="#contact"
+          href="#projects"
           className="w-[12.75rem]"
         >
-          Contact Me
+          My Projects
         </Button>
         <Button
           variant="outlined"

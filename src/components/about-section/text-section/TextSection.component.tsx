@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 export default function TextSection() {
   return (
     <div className="max-lg:w-full w-[50%] flex flex-col max-lg:items-center gap-6">
-      <p className="text-lg text-[#D7D1D1] capitalize font-medium text-justify">
+      <p className="text-lg text-[#D7D1D1] capitalize font-medium lg:text-justify text-center">
         I’m a passionate UX/UI designer dedicated to crafting user-centered
         digital experiences that are both functional and visually engaging. With
         a strong foundation in human-centered design principles, I bridge the

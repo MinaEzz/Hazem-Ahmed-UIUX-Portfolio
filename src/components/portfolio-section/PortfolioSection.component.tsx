@@ -10,7 +10,7 @@ export default function PortfolioSection() {
   const screenSize = useScreenSize();
   return (
     <section
-      id="portfolio"
+      id="projects"
       aria-labelledby="portfolio-heading"
       className="w-full pd-y-s"
     >
