@@ -23,17 +23,29 @@ const k2d = K2D({
 export const metadata: Metadata = {
   title: "Hazem Ahmed | Senior UI/UX Designer",
   description:
-    "Portfolio of Hazem Ahmed, Senior UI/UX Designer with over 5 years of experience creating intuitive and engaging digital experiences.",
+    "Portfolio of Hazem Ahmed, a Senior UI/UX Designer based in Egypt with over 5 years of experience designing seamless user experiences, product interfaces, and digital products. Explore case studies, UX processes, and modern UI design projects.",
   keywords: [
     "Hazem Ahmed",
-    "UI UX Designer",
+    "UI UX Designer Egypt",
     "UX Designer Portfolio",
     "UI Designer Portfolio",
+    "UX Research",
     "Senior UI UX Designer",
     "User Experience",
     "User Interface Design",
     "Product Designer",
+    "Digital Product Design",
+    "UI UX Case Studies",
     "UIUX Freelance",
+
+    // Arabic
+     "مصمم UI UX",
+  "مصمم تجربة مستخدم",
+  "مصمم واجهات مستخدم",
+  "مصمم منتجات رقمية",
+  "محفظة أعمال UX",
+  "خدمات تصميم UI UX",
+  "فريلانس UI UX"
   ],
   authors: [
     {
