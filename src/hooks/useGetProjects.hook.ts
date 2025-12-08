@@ -13,18 +13,19 @@ export function useGetProjects() {
       const { data, error } = await supabase.from("projects").select("*");
 
       if (error) {
+        console.error(error);
         throw new Error(
           error.message || "Error occured while fetching projects"
         );
       }
       setProjects(data);
-
-      console.log("projects", data);
     } catch (error: unknown) {
       if (error instanceof Error) {
-        console.log(error.message);
+        console.error(error);
+        throw new Error(error.message);
       }
-      console.log("unknown error occured");
+      console.error("unknown error occured");
+      throw new Error("unknown error occured");
     } finally {
       setIsLoading(false);
     }
