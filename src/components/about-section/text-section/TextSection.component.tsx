@@ -16,7 +16,12 @@ export default function TextSection() {
         measurable results.
       </p>
       <ToUp>
-        <Button variant="default" size="md">
+        <Button
+          variant="default"
+          size="md"
+          href="/Hazem Ahmed CV.pdf"
+          download={true}
+        >
           <FiDownload className="w-4 h-4" />
           Download CV
         </Button>
