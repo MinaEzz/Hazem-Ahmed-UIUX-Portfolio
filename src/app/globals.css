@@ -55,3 +55,13 @@ body {
     padding-left: 1rem;
   }
 }
+
+.slick-dots li button:before {
+  color: var(--primary) !important;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--primary) !important;
+  opacity: 1;
+}

@@ -1,10 +1,14 @@
-import { PROJECTS } from "@/data";
-import ProjectCard from "./project-card/ProjectCard.component";
+import ProjectCard from "../project-card/ProjectCard.component";
+import IProject from "@/types/projects.types";
 import { useAppSelector } from "@/lib/store/hooks";
 
-export default function DesktopPortfolio() {
+export default function DesktopProjects({
+  projects = [],
+}: {
+  projects: IProject[];
+}) {
   const filterBy = useAppSelector((state) => state.projectsFilter.selected);
-  const filteredProjects = PROJECTS.filter(
+  const filteredProjects = projects.filter(
     (project) => filterBy === "all" || project.category === filterBy
   );
   return (
@@ -15,7 +19,7 @@ export default function DesktopPortfolio() {
             <ProjectCard
               title={project.title}
               image={project.image}
-              href={project.link}
+              // href={project.link}
             />
           </li>
         );
