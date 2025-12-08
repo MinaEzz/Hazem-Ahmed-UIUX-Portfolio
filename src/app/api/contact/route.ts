@@ -1,11 +1,21 @@
 import "server-only";
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+// import { Resend } from "resend";
+import nodemailer from "nodemailer";
+
 import AdminEmail from "@/emails/contact-us/AdminEmail";
 import ClientEmail from "@/emails/contact-us/ClientEmail";
 import { render, pretty } from "@react-email/render";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
+});
 
 export async function POST(request: Request) {
   const { name, email, phoneNumber, service, timeline, details } =
@@ -25,17 +35,17 @@ export async function POST(request: Request) {
   const userEmailHtml = await pretty(await render(ClientEmail({ name })));
 
   // Email to admin
-  await resend.emails.send({
-    from: "Hazem Ahmed | UI/UX Designer <onboarding@resend.dev>",
-    to: ["minaezzat98@gmail.com"],
-    subject: `New Contact Form Submission`,
+  await transporter.sendMail({
+    from: `"Hazem Ahmed | UI/UX Designer" <${process.env.GMAIL_USER}>`,
+    to: "minaezzat98@gmail.com",
+    subject: "New Contact Form Submission",
     html: adminEmailHtml,
   });
 
   // Auto-reply to client
-  await resend.emails.send({
-    from: "Hazem Ahmed | UI/UX Designer <onboarding@resend.dev>",
-    to: [email],
+  await transporter.sendMail({
+    from: `"Hazem Ahmed | UI/UX Designer" <${process.env.GMAIL_USER}>`,
+    to: email,
     subject: "Your message has been received",
     html: userEmailHtml,
   });

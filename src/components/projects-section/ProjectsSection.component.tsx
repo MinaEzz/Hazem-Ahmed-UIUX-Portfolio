@@ -2,25 +2,25 @@
 import useScreenSize from "@/hooks/useScreenSize.hook";
 import SectionContentWrapper from "../common/section-content-wrapper/SectionContentWrapper.component";
 import SectionHeader from "../common/section-header/SectionHeader.component";
-import DesktopPortfolio from "./desktop-portfolio/DesktopPortfolio.component";
-import MobilePortfolio from "./mobile-portfolio/MobilePortfolio.component";
+import DesktopProjects from "./desktop-projects/DesktopProjects.component";
+import MobileProjects from "./mobile-porjects/MobileProjects.component";
 import FilterButtons from "./filter-buttons/FilterButtons.component";
 import { useGetProjects } from "@/hooks/useGetProjects.hook";
 import { RingLoader } from "react-spinners";
 
-export default function PortfolioSection() {
+export default function ProjectsSection() {
   const screenSize = useScreenSize();
   const { projects, isLoading } = useGetProjects();
 
   return (
     <section
       id="projects"
-      aria-labelledby="portfolio-heading"
+      aria-labelledby="projects-heading"
       className="w-full pd-y-s"
     >
       <div className="container">
         <SectionContentWrapper>
-          <SectionHeader id="portfolio-heading" title="Portfolio">
+          <SectionHeader id="projects-heading" title="Projects">
             <FilterButtons />
           </SectionHeader>
           {isLoading ? (
@@ -30,10 +30,10 @@ export default function PortfolioSection() {
                 Loading...
               </span>
             </div>
-          ) : screenSize > 850 ? (
-            <DesktopPortfolio projects={projects} />
+          ) : screenSize > 1024 ? (
+            <DesktopProjects projects={projects} />
           ) : (
-            <MobilePortfolio />
+            <MobileProjects projects={projects} />
           )}
         </SectionContentWrapper>
       </div>

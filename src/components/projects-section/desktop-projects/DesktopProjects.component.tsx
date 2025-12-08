@@ -1,9 +1,9 @@
-import ProjectCard from "./project-card/ProjectCard.component";
+import ProjectCard from "../project-card/ProjectCard.component";
 import IProject from "@/types/projects.types";
 import { useAppSelector } from "@/lib/store/hooks";
 
-export default function DesktopPortfolio({
-  projects,
+export default function DesktopProjects({
+  projects = [],
 }: {
   projects: IProject[];
 }) {
