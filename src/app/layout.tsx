@@ -7,6 +7,7 @@ import "./globals.css";
 import "@/scss/style.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -39,13 +40,13 @@ export const metadata: Metadata = {
     "UIUX Freelance",
 
     // Arabic
-     "مصمم UI UX",
-  "مصمم تجربة مستخدم",
-  "مصمم واجهات مستخدم",
-  "مصمم منتجات رقمية",
-  "محفظة أعمال UX",
-  "خدمات تصميم UI UX",
-  "فريلانس UI UX"
+    "مصمم UI UX",
+    "مصمم تجربة مستخدم",
+    "مصمم واجهات مستخدم",
+    "مصمم منتجات رقمية",
+    "محفظة أعمال UX",
+    "خدمات تصميم UI UX",
+    "فريلانس UI UX",
   ],
   authors: [
     {
@@ -105,6 +106,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <ToastContainer position="top-right" theme="dark" />
+          <Analytics />
         </RootProvider>
       </body>
     </html>
