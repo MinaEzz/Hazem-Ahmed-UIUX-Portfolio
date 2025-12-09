@@ -65,3 +65,7 @@ body {
   color: var(--primary) !important;
   opacity: 1;
 }
+
+.slick-slide {
+  padding: 0 8px !important;
+}

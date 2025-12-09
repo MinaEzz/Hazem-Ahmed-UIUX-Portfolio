@@ -2,9 +2,15 @@ import Link from "next/link";
 import IProjectCardProps from "./ProjectCard.types";
 import Image from "next/image";
 
-export default function ProjectCard({ image, title }: IProjectCardProps) {
+export default function ProjectCard({
+  image,
+  title,
+  className = "",
+}: IProjectCardProps) {
   return (
-    <div className="xl:w-[90%] xl:mx-auto w-full h-full bg-white/4 rounded-2xl overflow-hidden">
+    <div
+      className={`xl:w-[90%] xl:mx-auto w-full h-full bg-white/4 rounded-2xl overflow-hidden ${className}`}
+    >
       {/* CARD HEADER */}
       <div className="w-full aspect-[1.7] relative">
         <Image src={image} alt={title} fill />
