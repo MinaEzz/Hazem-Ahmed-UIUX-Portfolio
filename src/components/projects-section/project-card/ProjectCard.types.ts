@@ -4,4 +4,5 @@ export default interface IProjectCardProps {
   image: string | StaticImport;
   title: string;
   // href: string;
+  className?: string;
 }
