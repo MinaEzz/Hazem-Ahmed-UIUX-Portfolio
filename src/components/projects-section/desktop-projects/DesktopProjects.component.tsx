@@ -19,7 +19,7 @@ export default function DesktopProjects({
             <ProjectCard
               title={project.title}
               image={project.image}
-              // href={project.link}
+              href={project.pdfUrl}
             />
           </li>
         );

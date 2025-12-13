@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function ProjectCard({
   image,
   title,
+  href,
   className = "",
 }: IProjectCardProps) {
   return (
@@ -18,12 +19,16 @@ export default function ProjectCard({
 
       <div className="w-full my-4 px-4 flex items-center justify-between gap-4 capitalize">
         <h4 className="text-lg font-bold text-[#C6C6C6]">{title}</h4>
-        <Link
-          href="/projects"
-          className="text-base text-[#2231FF] !underline font-semibold shrink-0"
-        >
-          View Project
-        </Link>
+        {href && (
+          <Link
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base text-[#2231FF] !underline font-semibold shrink-0"
+          >
+            View Project
+          </Link>
+        )}
       </div>
     </div>
   );

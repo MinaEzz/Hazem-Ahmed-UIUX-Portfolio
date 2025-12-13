@@ -6,4 +6,6 @@ export default interface IProject {
   image: string;
   createdAt: string;
   category: Tcategory;
+  company: string;
+  pdfUrl: string;
 }
