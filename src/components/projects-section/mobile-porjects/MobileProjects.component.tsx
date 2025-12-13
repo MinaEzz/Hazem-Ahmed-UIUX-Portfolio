@@ -31,7 +31,14 @@ export default function MobileProjects({
     <div className="w-full text-white">
       <Slider {...settings}>
         {filteredProjects.map((project) => {
-          return <ProjectCard key={project.title} {...project} />;
+          return (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              image={project.image}
+              href={project.pdfUrl}
+            />
+          );
         })}
       </Slider>
     </div>
