@@ -11,6 +11,9 @@ import { RingLoader } from "react-spinners";
 export default function ProjectsSection() {
   const screenSize = useScreenSize();
   const { projects, isLoading } = useGetProjects();
+  const sortedProjects = projects.sort((a, b) =>
+    a.company.toLocaleLowerCase().localeCompare(b.company)
+  );
 
   return (
     <section
@@ -31,9 +34,9 @@ export default function ProjectsSection() {
               </span>
             </div>
           ) : screenSize > 1024 ? (
-            <DesktopProjects projects={projects} />
+            <DesktopProjects projects={sortedProjects} />
           ) : (
-            <MobileProjects projects={projects} />
+            <MobileProjects projects={sortedProjects} />
           )}
         </SectionContentWrapper>
       </div>
