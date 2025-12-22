@@ -45,11 +45,11 @@ export default function Header() {
 
             <DesktopNavigation />
 
-            <Button className="shrink-0 max-lg:hidden" href="#contact">
+            <Button className="shrink-0 max-xl:hidden" href="#contact">
               Hire Me
             </Button>
             <button
-              className="lg:hidden text-white cursor-pointer"
+              className="xl:hidden text-white cursor-pointer"
               onClick={() => dispatch(openMobileNavMenu())}
               aria-controls="mobile-menu"
               aria-expanded={isOpen ? "true" : "false"}
