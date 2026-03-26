@@ -33,7 +33,7 @@ export default function EmailLayout({
           <Section
             style={{
               backgroundImage:
-                "url('https://www2.0zz0.com/2025/11/26/16/183913915.jpg')",
+                "url('https://i.postimg.cc/FRBZv188/Group-1437255954-(1).jpg')",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "50% 15%",
