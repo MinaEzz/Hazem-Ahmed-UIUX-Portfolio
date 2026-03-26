@@ -1,13 +1,9 @@
 import "server-only";
 import { NextResponse } from "next/server";
-// import { Resend } from "resend";
 import nodemailer from "nodemailer";
-
+import { render, pretty } from "@react-email/render";
 import AdminEmail from "@/emails/contact-us/AdminEmail";
 import ClientEmail from "@/emails/contact-us/ClientEmail";
-import { render, pretty } from "@react-email/render";
-
-// const resend = new Resend(process.env.RESEND_API_KEY);
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -24,20 +20,20 @@ export async function POST(request: Request) {
   if (!name || !email || !phoneNumber || !service || !timeline || !details)
     return NextResponse.json(
       { status: "ERROR", message: "Missing required fields" },
-      { status: 400 }
+      { status: 400 },
     );
 
   const adminEmailHtml = await pretty(
     await render(
-      AdminEmail({ name, email, phoneNumber, service, timeline, details })
-    )
+      AdminEmail({ name, email, phoneNumber, service, timeline, details }),
+    ),
   );
   const userEmailHtml = await pretty(await render(ClientEmail({ name })));
 
   // Email to admin
   await transporter.sendMail({
     from: `"Hazem Ahmed | UI/UX Designer" <${process.env.GMAIL_USER}>`,
-    to: "minaezzat98@gmail.com",
+    to: process.env.GMAIL_USER,
     subject: "New Contact Form Submission",
     html: adminEmailHtml,
   });
@@ -56,6 +52,6 @@ export async function POST(request: Request) {
       data: { name, email, phoneNumber, service, timeline, details },
       message: "Message sent successfully",
     },
-    { status: 200 }
+    { status: 200 },
   );
 }
